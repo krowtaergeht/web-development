@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0B2434;
+    padding: 20px;
+    font-family: 'Karla', sans-serif;
+}
+
+main {
+    background-color: #F5F5F5;
+    height: 400px;
+    max-width: 800px;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title {
+    font-size: 40px;
+    margin: 0;
+}
+
+.instructions {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+    text-align: center;
+}
+
+.dice-container {
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.die-face {
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    border-color: #0B2434;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.one-sided-die {
+    background-image: url('./images/one-sided-die.png');
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+.two-sided-die {
+    background-image: url('./images/two-sided-die.png');
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+.three-sided-die {
+    background-image: url('./images/three-sided-die.png');
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+.four-sided-die {
+    background-image: url('./images/four-sided-die.png');
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+.five-sided-die {
+    background-image: url('./images/five-sided-die.png');
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+.six-sided-die {
+    background-image: url('./images/six-sided-die.png');
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+.roll-dice {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 6px;
+    background-color: #5035FF;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+}
+
+.roll-dice:focus {
+    outline: none;
+}
+
+.roll-dice:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
